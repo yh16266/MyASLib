@@ -1,4 +1,4 @@
-package com.jf.test.myaslib;
+package com.jf.test.myaslib.client.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -25,6 +25,8 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.jf.test.myaslib.R;
 
 import java.util.ArrayList;
 import java.util.List;
