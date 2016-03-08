@@ -6,19 +6,20 @@
     android:layout_height="match_parent"
     tools:context="com.jf.test.myaslib.client.ui.ToolsbarActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:navigationIcon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
         app:popupTheme="@style/AppTheme.PopupOverlay"
-        android:background="?attr/colorPrimary"/>
+        app:theme="@style/AppTheme.ToolBarStyle"
+        app:title="test">
 
-    </android.support.design.widget.AppBarLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mytest"
+            android:id="@+id/textView2" />
+
+    </android.support.v7.widget.Toolbar>
 
 </LinearLayout>
