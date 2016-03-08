@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.jf.test.myaslib.R;
 
@@ -22,7 +23,14 @@ public class ToolsbarActivity extends AppCompatActivity {
         toolbar.setTitle("MD toolbar 测试");
         toolbar.setSubtitle("副标题");
         toolbar.setLogo(R.drawable.ic_menu_slideshow);
-        toolbar.setNavigationIcon(android.R.drawable.ic_menu_crop);
+        //toolbar.setNavigationIcon(android.R.drawable.ic_menu_crop);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
         //toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
         //    @Override
         //    public boolean onMenuItemClick(MenuItem item) {
@@ -40,6 +48,10 @@ public class ToolsbarActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+        //if(item.getItemId() == android.R.id.home){
+        //   onBackPressed();
+        //}
+        return true;
+        //return super.onOptionsItemSelected(item);
     }
 }
