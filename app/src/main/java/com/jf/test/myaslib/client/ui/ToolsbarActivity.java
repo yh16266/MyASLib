@@ -18,19 +18,19 @@ public class ToolsbarActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        //getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         toolbar.setTitle("MD toolbar 测试");
         toolbar.setSubtitle("副标题");
-        toolbar.setLogo(R.drawable.ic_menu_slideshow);
+        //toolbar.setLogo(R.drawable.ic_menu_slideshow);
         //toolbar.setNavigationIcon(android.R.drawable.ic_menu_crop);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                onBackPressed();
+//            }
+//        });
         //toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
         //    @Override
         //    public boolean onMenuItemClick(MenuItem item) {

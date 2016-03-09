@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".client.ui.ToolsbarActivity">
-
     <item
         android:id="@+id/nav_camera"
         android:icon="@drawable/ic_menu_camera"
+        app:showAsAction="withText"
         android:title="test1" />
     <item
         android:id="@+id/nav_gallery"
         android:icon="@drawable/ic_menu_gallery"
         android:title="test2" />
-    <item
-        android:id="@+id/nav_slideshow"
-        android:icon="@drawable/ic_menu_slideshow"
-        android:title="test3" />
-
 </menu>
